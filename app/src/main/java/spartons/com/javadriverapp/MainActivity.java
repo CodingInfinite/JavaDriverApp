@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         driverStatusTextView = findViewById(R.id.driverStatusTextView);
         driverStatusSwitch.setOnCheckedChangeListener((buttonView, b) -> {
             driverOnlineFlag.set(b);
-            if (driverOnlineFlag.get())
+            if (b)
                 driverStatusTextView.setText(getResources().getString(R.string.online));
             else {
                 driverStatusTextView.setText(getResources().getString(R.string.offline));
