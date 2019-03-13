@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             Location location = locationResult.getLastLocation();
             if (location == null) return;
             if (locationFlag) {
-                locationFlag = true;
+                locationFlag = false;
                 animateCamera(location);
             }
             if (driverOnlineFlag.get())
